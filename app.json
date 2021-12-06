@@ -3,7 +3,7 @@
   "description": "Open Source bot to stream media trough Telegram Voice Chat. Powered by PyTgCalls and Pyrogram",
   "logo": "https://telegra.ph/file/f9a63f0811c00fcbc01bd.jpg",
   "keywords": ["Nikhilmusic", "musicbot", "video-stream", "videochat", "voicechat", "telegram"],
-  "repository": "https://github.com/nikhilowner/NIKHIL-OWNER-MUSIC",
+  "repository": "https://github.com/DEXDECRYPT/DEXDECRYPT-MUSIC",
   "stack": "container",
   "env": {
     "API_ID": {
