@@ -1,0 +1,63 @@
+{
+  "name": "NikhilMusic Bot",
+  "description": "Open Source bot to stream media trough Telegram Voice Chat. Powered by PyTgCalls and Pyrogram",
+  "logo": "https://telegra.ph/file/f9a63f0811c00fcbc01bd.jpg",
+  "keywords": ["Nikhilmusic", "musicbot", "video-stream", "videochat", "voicechat", "telegram"],
+  "repository": "https://github.com/nikhilowner/NIKHIL-OWNER-MUSIC",
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "Fill it with your API_ID, get it from my.telegram.org/apps",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Fill it with your API_HASH, get it from my.telegram.org/apps",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Fill it with your Bot token, get it from @BotFather",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Fill it with your telegram id, not api id",
+      "required": true
+    },
+    "SESSION": {
+      "description": "Fill it with your assistant session string",
+      "required": true
+    },
+    "GROUP_LINK": {
+      "description": "your group support link, can use private or public group, example https://t.me/Dost_hai_sab",
+      "required": false,
+      "value": "https://t.me/Dost_hai_sab"
+    },
+    "CHANNEL_LINK": {
+      "description": "your channel support link, can use private or public channel, example https://t.me/Dost_hai_sab",
+      "required": false,
+      "value": "https://t.me/Dost_hai_sab"
+    },
+    "UPSTREAM_REPO": {
+      "description": "fill it if you fork from original repo",
+      "required": false,
+      "value": "https://github.com/nikhilowner/NIKHIL-OWNER-MUSIC"
+    },
+    "AUTO_LEAVE": {
+      "description": "fill it with delay time for leaving group, fill 0 if you do not want to use this feature",
+      "required": false,
+      "value": "0"
+    },
+    "DURATION_LIMIT": {
+      "description": "fill it with minute that you want, example, limit for 3 minute, just fill 3, and for a hour, fill 60",
+      "required": false,
+      "value": "0"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ]
+}
